@@ -6,8 +6,7 @@ import cors from 'cors';
 
 //CREATE SERVER
 const server = express();
-//host name
-const hostname = 'localhost';
+
 //port //cors
 const port = process.env.PORT || 8001;
 
@@ -24,6 +23,6 @@ server.use('/api',app);
 server.use(cors());
 server.use(express.static('public'));
 //run server
-server.listen(port,hostname,()=>{
-    console.log(`The server is running on http://${hostname}:${port}/`);
+server.listen(port,()=>{
+    console.log(`The server is running on http://localhost:${port}/`);
 });
