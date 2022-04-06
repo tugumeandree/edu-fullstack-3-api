@@ -8,7 +8,7 @@ const server = express();
 //host name
 const hostname = 'localhost';
 //port //cors
-const port = 8001;
+const port = process.env.PORT || 8001;
 
 //CRUD
 //ROOT ROUTE
